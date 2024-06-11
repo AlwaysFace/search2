@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search Results</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <h1 class="text-center">Google Search</h1>
+        <div class="input-group mb-3">
+            <!-- Input field for search query -->
+            <input type="text" id="searchQuery" class="form-control" placeholder="Enter search query">
+            <div class="input-group-append">
+                <!-- Button to initiate search -->
+                <button class="btn btn-primary" onclick="performSearch()">Search</button>
+            </div>
+        </div>
+        <!-- Container to display search results -->
+        <div id="results" class="mt-4"></div>
+        <!-- Button to download results in JSON format, initially hidden -->
+        <button onclick="downloadResults()" class="btn btn-success mt-3" style="display: none;" id="downloadButton">Download Results</button>
+    </div>
+
+    <!-- Link to Bootstrap JS and dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
